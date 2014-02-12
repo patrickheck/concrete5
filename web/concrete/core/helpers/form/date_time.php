@@ -106,7 +106,7 @@ class Concrete5_Helper_Form_DateTime {
 			
 			$html .= '<input type="checkbox" id="' . $id . '_activate" class="ccm-activate-date-time" ccm-date-time-id="' . $id . '" name="' . $_activate . '" ' . $activated . ' />';
 		}
-		$html .= '<span class="ccm-input-date-wrapper" id="' . $id . '_dw"><input id="' . $id . '_dt_pub" name="' . $_dt . '_pub" class="ccm-input-date"  ' . $disabled . ' /><input id="' . $id . '_dt" name="' . $_dt . '" type="hidden" /></span>';
+		$html .= '<span class="ccm-input-date-wrapper" id="' . $id . '_dw"><input id="' . $id . '_dt_pub" name="' . $_dt . '_pub" class="ccm-input-date"  ' . $disabled . ' /><input id="' . $id . '_dt" name="' . $_dt . '" type="hidden" ' . $disabled . ' /></span>';
 		$html .= '<span class="ccm-input-time-wrapper" id="' . $id . '_tw">';
 		$html .= '<select id="' . $id . '_h" name="' . $_h . '" ' . $disabled . '>';
 		for ($i = $dfhs; $i <= $dfhe; $i++) {
